@@ -61,7 +61,10 @@ body {
 	background-color: #000;
 }
 
-
+@font-face {
+	font-family: comical;
+	src: url('../fonts/animeace2_reg.otf');
+}
 
 .main {
 	background-color: #fff;
@@ -69,18 +72,37 @@ body {
 	padding-left: 100px;
 	min-width: 1400px;
 	height: 500px;
+	position: relative;
+}
+
+.instructions {
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	width: 600px;
+}
+
+p {
+	font-family: comical;
+	font-size: 24px;
+	line-height: 45px;
+	width: 50%;
+}
+
+.text-right {
+	margin-left: 50%;
 }
 
 .ryu {
 	float: left;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 
@@ -96,7 +118,11 @@ body {
 	background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -110,4 +136,5 @@ body {
 	top: 170px;
 	left: -150px;
 }
+
 
